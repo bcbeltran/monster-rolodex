@@ -22,7 +22,6 @@ class App extends Component {
 				"-1533738363-b7f9aef128ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80",
 			],
 		};
-    this.searchMonsters = this.searchMonsters.bind(this);
 	}
 
 	componentDidMount() {
@@ -42,7 +41,7 @@ class App extends Component {
 			});
 	}
 
-  searchMonsters(e) {
+  searchMonsters = (e) => {
     e.preventDefault();
     this.setState({searchField: e.target.value});
   }
@@ -53,6 +52,7 @@ class App extends Component {
 
 		return (
 			<div className="App">
+        <h1 className="headerH1">Monster Rolodex</h1>
 				<SearchBox handleChange={this.searchMonsters} />
 				<CardList
 					monsters={filteredMonsters}

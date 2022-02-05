@@ -2,6 +2,13 @@
   text-align: center;
 }
 
+.headerH1 {
+  font-family: 'Boogaloo', monospace;
+  font-size: 10vw;
+  border-color: white;
+
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

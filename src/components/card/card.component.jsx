@@ -2,7 +2,6 @@ import React from 'react';
 import './card.styles.css';
 
 export const Card = ({monster}) => {
-    console.log('this is the monster, ', monster);
     return (
 		<div className="card-container">
 			<img
