@@ -1,16 +1,17 @@
 import React from 'react';
 import './card.styles.css';
 
-export const Card = (props) => {
+export const Card = ({monster}) => {
+    console.log('this is the monster, ', monster);
     return (
 		<div className="card-container">
 			<img
                 className='kitten-img'
-				alt="monster"
-				src={`https://images.unsplash.com/photo${props.kitten}`}
+				alt="monster kitten"
+				src={`https://images.unsplash.com/photo${monster.kitten}`}
 			/>
-			<h1>{props.monster.name}</h1>
-            <h2>{props.monster.email}</h2>
+			<h1>{monster.name}</h1>
+            <h2>{monster.email}</h2>
 		</div>
 	);
 }
