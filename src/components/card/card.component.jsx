@@ -10,7 +10,7 @@ export const Card = ({monster}) => {
 				src={`https://images.unsplash.com/photo${monster.kitten}`}
 			/>
 			<h1>{monster.name}</h1>
-            <h2>{monster.email}</h2>
+            <h3>{monster.email}</h3>
 		</div>
 	);
 }
